@@ -18,7 +18,6 @@ const Home = ({data}) => {
     let newDate = dayjs('1810-09-16').format('YYYY-MM-DD HH:mm:ss');
     const res = await fetch('http://localhost:3000/api/dailyt?date=' + newDate)
     const json = await res.json()
-    console.log(json)
     setTest(json)
   }
 
